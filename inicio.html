@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Produtos</title>
+        <meta charset="UTF-8">
+        <script src="algoritmos.js" type="text/javascript"></script>
+        <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="quadro">
+            <h1>Produtos</h1>
+            <form onsubmit="return validar()">
+                <label for="codigo">Código de Barras: </label>
+                <input type="text" name="codigo" id="codigo">
+                <input type="text" name="digito" id="digito" size="5" readonly><br>
+                
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" size="30"><br>
+                
+                <label for="unidade">Unidade: </label>
+                <select name="unidade" id="unidade">
+                    <option value="">Selecione uma opção</option>
+                    <option value="Uni">Uni</option>
+                    <option value="Kg">Kg</option>
+                    <option value="Lt">Lt</option>
+                </select><br>
+                
+                <label for="preco">Preço: </label>
+                <input type="text" name="preco" id="preco"><br> <!--  onKeyUp="mascaraData(this);" -->
+                
+                <label for="desc">Descrição Detalhada: </label>
+                <textarea name="desc" id="desc" rows="5" cols="50"></textarea><br>
+                
+                <input type="submit" value="Salvar">
+                <input type="reset" value="Limpar">
+            </form>
+        </div>
+    </body>
+</html>
